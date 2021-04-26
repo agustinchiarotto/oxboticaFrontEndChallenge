@@ -21,7 +21,7 @@ This challenge is solved principally with ReactJs. It also has different config 
 - Before you clone this project make sure you have installed the following requirements in your environment:
   - [**NodeJS & NPM**](https://nodejs.org/en/download/package-manager/)
 - Run command `npm i` on the same route as package.json file.
-- If you are ussing nvm (node version manager), run `nvm use`. You need at least version 14.15.0 to run this app.
+- If you are ussing nvm (node version manager), run `nvm use`. You need at least version 10.16.0 to run this app.
 
 ---
 
