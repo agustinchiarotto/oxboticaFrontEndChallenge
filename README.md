@@ -1,46 +1,41 @@
-# Getting Started with Create React App
+# Oxbotica Challenge Frontend Developer -
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Guillermo Agustín Chiarotto**
+Email: Agusgc_99@hotmail.com
+Phone: +542994575660
+Linkedin: https://www.linkedin.com/in/agustinchiarotto/
 
-## Available Scripts
+[![Generic badge](https://img.shields.io/badge/node->=v12.18.3-green.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/npm-v6.14.8-green.svg)](https://shields.io/)
 
-In the project directory, you can run:
+**Objective**
+The objective of this code is to respond to the functionality presented in the Oxbotica frontend challenge.
 
-### `yarn start`
+**Technologies**
+This challenge is solved principally with ReactJs. It also has different config files for globally set the prettier and eslint configuration for all the project and the node version needed to run this app.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Instalation**
 
-### `yarn test`
+- Before you clone this project make sure you have installed the following requirements in your environment:
+  - [**NodeJS & NPM**](https://nodejs.org/en/download/package-manager/)
+- Run command `npm i` on the same route as package.json file.
+- If you are ussing nvm (node version manager), run `nvm use`. You need at least version 14.15.0 to run this app.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `yarn build`
+**Execution**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- To start running the server use the command: `npm start`. From this point the app is ready to be used on http://localhost:3000 or http://192.168.0.175:3000 on your Network.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+There are some environment variables you can change:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **ENVIROMENT:** sets the environment you are working on (default: development).
+- **API_URL:** sets the API's hostname (default: 'https://vehicle-api-test.herokuapp.com/api')
 
-### `yarn eject`
+**Next improvements**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- The idea is to show telemetry data on different charts to help us observe how is this data changing over time. Another important improvement is the adding of a map to show the current position of the vehicle in a graphic way.
+  On the other hand, would be useful to have a search form, orders, and filters for the vehicles table.
+  It is also necessary to add Redux or another global state handler to improve efficiency on API calls.
