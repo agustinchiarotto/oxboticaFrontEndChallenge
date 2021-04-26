@@ -38,7 +38,7 @@ const createEmptyVehicleState = (): vehicle => {
 const Telemetry = () => {
   let { id } = useParams<{ id: string }>();
 
-  const [telemetyResult, setTelemetyResult] = useState(createEmptyTelemetryState);
+  const [telemetyResult, setTelemetyResult] = useState(createEmptyTelemetryState());
   const [vehicleData, setVehicleData] = useState(createEmptyVehicleState());
   const [fetchData, setFetchData] = useState(false);
   const [isLoading, setisLoading] = useState(true);
