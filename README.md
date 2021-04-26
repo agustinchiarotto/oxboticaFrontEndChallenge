@@ -34,6 +34,8 @@ There are some environment variables you can change:
 - **ENVIROMENT:** sets the environment you are working on (default: development).
 - **API_URL:** sets the API's hostname (default: 'https://vehicle-api-test.herokuapp.com/api')
 
+---
+
 **Next improvements**
 
 - The idea is to show telemetry data on different charts to help us observe how is this data changing over time. Another important improvement is the adding of a map to show the current position of the vehicle in a graphic way.
