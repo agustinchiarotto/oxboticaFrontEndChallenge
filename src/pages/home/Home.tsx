@@ -15,7 +15,6 @@ const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   const history = useHistory();
-  console.log(history);
 
   useEffect(() => {
     const fetchVehicles = async () => {
