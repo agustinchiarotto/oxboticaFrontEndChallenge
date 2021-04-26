@@ -5,8 +5,8 @@ Email: Agusgc_99@hotmail.com
 Phone: +542994575660
 Linkedin: https://www.linkedin.com/in/agustinchiarotto/
 
-[![Generic badge](https://img.shields.io/badge/node->=v12.18.3-green.svg)](https://shields.io/)
-[![Generic badge](https://img.shields.io/badge/npm-v6.14.8-green.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/node->=v10.16.0-green.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/npm-v5.6.0-green.svg)](https://shields.io/)
 
 **Objective**
 The objective of this code is to respond to the functionality presented in the Oxbotica frontend challenge.
