@@ -27,7 +27,7 @@ This challenge is solved principally with ReactJs. It also has different config 
 
 **Execution**
 
-- To start running the server use the command: `npm start`. From this point the app is ready to be used on http://localhost:3000 or http://192.168.0.175:3000 on your Network.
+- To start running the app use the command: `npm start`. From this point the app is ready to be used on http://localhost:3000 or http://192.168.0.175:3000 on your Network.
 
 There are some environment variables you can change:
 
