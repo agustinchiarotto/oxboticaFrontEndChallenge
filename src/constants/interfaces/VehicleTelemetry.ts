@@ -1,11 +1,4 @@
-export interface vehicle {
-  id: string;
-  name: string;
-  color: string;
-  plate_number: string;
-}
-
-export interface telemerty {
+interface VehicleTelemetry {
   vehicle_id: string;
   timestamp: number;
   lat: number;
@@ -14,3 +7,5 @@ export interface telemerty {
   cpu_usage: number;
   battery_level: number;
 }
+
+export default VehicleTelemetry;

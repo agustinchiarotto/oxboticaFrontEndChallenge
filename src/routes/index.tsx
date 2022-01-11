@@ -1,13 +1,14 @@
-import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Home from '../pages/home/Home';
-import Telemetry from '../pages/telemetry/Telemetry';
+import routes from '../constants/routes/routes';
+import { ErrorPage, Home, NotFound, Telemetry } from '../pages';
 
 const Routes = () => {
   return (
     <Switch>
-      <Route path="/telemetry/:id" component={Telemetry} />
-      <Route path="/" component={Home} />
+      <Route path={routes.NOT_FOUND} component={NotFound} />
+      <Route path={routes.ERROR_PAGE} component={ErrorPage} />
+      <Route path={routes.TELEMETRY} component={Telemetry} />
+      <Route path={routes.HOME} component={Home} />
     </Switch>
   );
 };

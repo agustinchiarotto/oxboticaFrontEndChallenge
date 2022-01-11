@@ -1,33 +1,33 @@
-interface fetchResponse {
-  success: boolean;
-  payload: any;
-  error: string;
+import axios, { Method } from 'axios';
+import { FetchApiError } from '../constants/interfaces';
+
+interface Props {
+  method: Method | undefined;
+  url: string;
+  headers?: {};
+  data?: {};
+  params?: URLSearchParams;
 }
 
-export const fecthServer = async (url: string): Promise<fetchResponse> => {
-  let serviceResponse;
+export const fecthServer = async ({ method, url, headers = {}, data = {}, params }: Props) => {
   try {
-    const response = await fetch(url);
-    const parsedResponse = await response.json();
-    if (response.status === 200) {
-      serviceResponse = {
-        success: true,
-        payload: parsedResponse,
-        error: '',
-      };
-    } else {
-      serviceResponse = createErrorResponse(parsedResponse.error);
+    const response = await axios({
+      method,
+      url,
+      data,
+      params,
+      headers,
+    });
+    return response.data;
+  } catch (e) {
+    if (e.response.data) {
+      const error: FetchApiError = e.response.data;
+      throw new FetchApiError(
+        error.status || 500,
+        error.message || 'Something went wrong. Please try again.',
+      );
     }
-  } catch (error) {
-    serviceResponse = createErrorResponse();
-  }
-  return serviceResponse;
-};
 
-const createErrorResponse = (message?: string) => {
-  return {
-    success: false,
-    payload: undefined,
-    error: message || 'An unknown error occurred.',
-  };
+    throw new FetchApiError(500, 'Something went wrong. Please try again.');
+  }
 };

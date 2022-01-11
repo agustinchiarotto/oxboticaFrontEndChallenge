@@ -1,3 +1,7 @@
+.fontSizeXl {
+  font-size: 1.3rem;
+}
+
 .table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -9,11 +13,12 @@ th {
   border: 0px solid #dddddd;
   text-align: center;
   padding: 8px;
+  color: #363636;
 }
 
 th {
-  font-size: 28px;
-  background-color: #002147;
+  font-size: 1.75rem;
+  background-color: var(--color-primary);
   color: white;
 }
 

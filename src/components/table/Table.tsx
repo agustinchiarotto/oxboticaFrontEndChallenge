@@ -1,17 +1,17 @@
 import React from 'react';
+import { Vehicle } from '../../constants/interfaces';
 import CardColor from '../cardColor/CardColor';
-import { vehicle } from '../../types';
 
 import styles from './styles.module.css';
 
 const Table = ({
   theadData,
   tbodyData,
-  onClick,
+  onClickRow,
 }: {
   theadData: string[];
-  tbodyData: vehicle[];
-  onClick: Function;
+  tbodyData: Vehicle[];
+  onClickRow: Function;
 }) => {
   return (
     <table className={styles.table}>
@@ -23,10 +23,10 @@ const Table = ({
         </tr>
       </thead>
       <tbody>
-        {tbodyData.map((item: vehicle) => {
+        {tbodyData.map((item: Vehicle) => {
           return (
-            <tr key={item.id} onClick={() => onClick(item.id)}>
-              <td>{item.name}</td>
+            <tr key={item.id} onClick={() => onClickRow(item.id)}>
+              <td className={styles.fontSizeXl}>{item.name}</td>
               <td>{item.plate_number}</td>
               <td>
                 <CardColor color={item.color} />

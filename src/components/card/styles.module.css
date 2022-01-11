@@ -1,5 +1,5 @@
 .card {
-  box-shadow: 0 4px 8px 0 #002147;
+  box-shadow: 0 4px 8px 0 var(--color-primary);
   transition: 0.3s;
   width: 20%;
   margin-left: 1%;
@@ -7,7 +7,8 @@
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 #002147;
+  box-shadow: 0 8px 16px 0 var(--color-primary);
+  cursor: pointer;
 }
 
 .container {
@@ -33,7 +34,7 @@
 
 @media only screen and (max-width: 900px) {
   .card {
-    box-shadow: 0 4px 8px 0 #002147;
+    box-shadow: 0 4px 8px 0 var(--color-primary);
     transition: 0.3s;
     width: 100%;
     margin-left: 1%;
