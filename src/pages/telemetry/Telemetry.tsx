@@ -23,7 +23,7 @@ const Telemetry = () => {
     isError: isErrorTelemetry,
   } = useTelemetry(id);
 
-  if (isLoadingVehicle && isLoadingTelemetry) {
+  if (isLoadingVehicle || isLoadingTelemetry) {
     return <LoadingSpinner />;
   }
 

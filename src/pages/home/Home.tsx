@@ -9,11 +9,13 @@ const Home = () => {
   const { data: vehicles, isLoading, isError } = useVehicles();
   const history = useHistory();
 
+  let a = 2;
+
   const navigateToTelemetry = (id: string) => {
     history.push(`/telemetry/${id}`);
   };
 
-  if (isLoading) {
+  if (a === 2) {
     return <LoadingSpinner />;
   }
 
