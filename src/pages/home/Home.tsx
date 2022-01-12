@@ -21,8 +21,6 @@ const Home = () => {
     history.push(routes.ERROR_PAGE);
   }
 
-  console.log('vehicles', vehicles);
-
   return (
     <div>
       <div className={styles.gradient}>
