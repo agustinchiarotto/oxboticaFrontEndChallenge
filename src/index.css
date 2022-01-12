@@ -4,9 +4,6 @@ html {
 }
 
 body {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 30px;
   font-family: -apple-system, 'Montserrat', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -19,15 +16,20 @@ code {
 
 h1 {
   font-size: 3em;
+  margin: 0;
 }
 
-th,
+th {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
 td {
   font-family: 'Montserrat', sans-serif;
 }
 
 @media only screen and (max-width: 600px) {
   body {
-    margin: 0;
+    margin: 16px;
   }
 }

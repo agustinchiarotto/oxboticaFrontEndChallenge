@@ -5,7 +5,7 @@
 .table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 80%;
 }
 
 td,
@@ -17,7 +17,7 @@ th {
 }
 
 th {
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   background-color: var(--color-primary);
   color: white;
 }
@@ -27,5 +27,9 @@ td:hover {
 }
 
 tr:nth-child(even) {
+  background-color: white;
+}
+
+tr:nth-child(odd) {
   background-color: #eeeeee;
 }

@@ -1,8 +1,21 @@
+.backgroundGrey {
+  background-color: #eeeeee;
+  min-height: 100vh;
+}
+
+.fontColorPrimary {
+  color: var(--color-primary);
+}
+
+.subTitleContainer {
+  padding-left: 10%;
+  margin-top: 2%;
+}
+
 .row {
   flex-direction: row;
   display: flex;
   justify-content: center;
-  margin-top: 4%;
 }
 .smallFontWeight {
   font-weight: 400;

@@ -1,3 +1,42 @@
+.headerContainer {
+  padding-left: 10%;
+  padding-top: 50px;
+  margin-bottom: 30px;
+  background: linear-gradient(to left, var(--color-secondary), var(--color-primary));
+  height: 300px;
+}
+
+.goBackButton {
+  width: 40px;
+  height: 40px;
+}
+
+.flexRow {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: flex-start;
+  color: white;
+}
+
 .title {
-  color: var(--color-primary);
+  font-size: 4rem;
+  max-width: 55%;
+  color: white;
+}
+
+.marginTop {
+  margin-top: 95px;
+}
+
+h4 {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .title {
+    max-width: 100%;
+  }
 }
