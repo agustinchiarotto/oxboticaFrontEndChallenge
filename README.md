@@ -42,5 +42,5 @@ There are some environment variables you can change:
 
 **Next improvements**
 
-- The idea is to show telemetry data on different charts to help us observe how is this data changing over time. Another important improvement is the adding of a map to show the current position of the vehicle in a graphic way.
+- The idea is to show telemetry data on different charts to help us observe how is this data changing over time. Another important improvement is adding a map to show the current position of the vehicle in a graphic way.
   On the other hand, would be useful to have a search form, orders, pagination management, and filters for the vehicles table.
