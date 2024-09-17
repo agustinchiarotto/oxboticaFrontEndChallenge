@@ -12,7 +12,7 @@ Linkedin: https://www.linkedin.com/in/agustinchiarotto/
 The objective of this code is to respond to the functionality presented in the Oxbotica frontend challenge.
 
 **Technologies**
-This challenge is solved principally with ReactJs and React-query. It also has different config files for globally set the prettier and eslint configuration for all the project and the node version needed to run this app.
+This challenge is solved principally with ReactJs and React-query. It also has different config files for globally setting the prettier and eslint configuration for all the projects and the node version needed to run this app.
 
 ---
 
@@ -20,27 +20,30 @@ This challenge is solved principally with ReactJs and React-query. It also has d
 
 - Before you clone this project make sure you have installed the following requirements in your environment:
   - [**NodeJS & NPM**](https://nodejs.org/en/download/package-manager/)
-- Run command `npm i` on the same route as package.json file.
-- If you are ussing nvm (node version manager), run `nvm use`. You need at least version 10.16.0 to run this app.
+- Run the command `npm i` on the same route as the package.json file.
+- If you are using nvm (node version manager), run `nvm use`. You need at least version 10.16.0 to run this app.
 
 ---
 
 **Execution**
 
-- To start running the app use the command: `npm start`. From this point the app is ready to be used on http://localhost:3000 or http://192.168.0.175:3000 on your Network.
+- To start running the app use the command: `npm start`. From this point, the app is ready to be used on http://localhost:3000 or http://192.168.0.175:3000 on your Network.
 
 There are some environment variables you can change:
 
-- **ENVIROMENT:** sets the environment you are working on (default: development).
+- **ENVIRONMENT:** sets the environment you are working on (default: development).
 - **API_URL:** sets the API's hostname (default: 'https://vehicle-api-test.herokuapp.com/api')
 
 ---
 
 **Improvements release 1.1**
 
-- The biggest enhance is the addition of React-query and Axios and the changes in how the data is fetching. This tool is helping us to have better efficiency on our API calls since it has a global state handler and lets us refetch the telemetry information without the setIntervalHook. Besides that, the project is cleaner since I created a better structure with indexes, constants for interfaces, routes, and colors, plus now we have a screen for error and 404 not found cases. Finally, The look and feel and the user experience are also better and the app is based on Oxbotica's branding system, using the color and fonts of their web page.
+- The most significant enhancement is the integration of React Query and Axios, along with improvements in data fetching. These additions provide better efficiency for our API calls, leveraging a global state handler and enabling refetching of telemetry data without relying on the setInterval hook. Additionally, the project structure is now more organized, featuring indexes, and constants for interfaces, routes, and colors. We've also added dedicated screens for error handling and 404 not found cases.
+
+Furthermore, the overall look and feel, as well as the user experience, have been refined. The application now aligns with Oxbotica's branding, incorporating their website's colors and fonts.
 
 **Next improvements**
 
-- The idea is to show telemetry data on different charts to help us observe how is this data changing over time. Another important improvement is adding a map to show the current position of the vehicle in a graphic way.
-  On the other hand, would be useful to have a search form, orders, pagination management, and filters for the vehicles table.
+- The plan is to display telemetry data across various charts, allowing us to track and analyze changes over time more effectively. Another key enhancement will be the integration of a map to represent the vehicle's current position visually.
+
+Additionally, it would be beneficial to implement a search form, sorting options, pagination, and filters for the vehicles table to improve data management and user navigation. These features will enhance usability and make it easier to find and organize relevant information.
